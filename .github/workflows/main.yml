@@ -36,9 +36,6 @@ jobs:
       # Compile notre application
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-
-      - name: Standard Checkout
-        uses: actions/checkout@v2
         
       # Publie les résultats de test
       - name: Publish Unit Test Results
